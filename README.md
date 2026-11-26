@@ -1,6 +1,6 @@
 # My Competitive Programming Solutions
 
-C++ solutions to 600+ competitive programming problems (2008–2022), plus the ICPC team notebooks I used in contests.
+C++ solutions to 600+ competitive programming problems, plus the ICPC team notebooks I used in contests.
 
 ## At a glance
 
