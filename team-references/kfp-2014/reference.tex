@@ -1,0 +1,124 @@
+\documentclass[letter]{amsart}
+\usepackage[pdftex]{geometry}
+\usepackage[utf8]{inputenc}
+
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{courier}
+\usepackage{fancyhdr}
+
+\lstset{language=C++}
+\lstset{columns=fullflexible}
+\lstset{basicstyle=\scriptsize\ttfamily}
+\lstset{showspaces=false}
+
+\geometry{landscape}
+\setlength{\topmargin}{-0.25in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\columnsep}{1in}
+\setlength{\columnseprule}{0.2pt}
+\textwidth 9.5in
+
+\pagestyle{fancy}
+\lhead{ UCLV: KFP, ACM-ICPC 2015 }
+\chead{}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+\newcommand{\includecpp}[3]{
+  \begin{multicols}{2}
+    [\subsection{#1}\ ]
+    \lstinputlisting[language=c++]{#2/#3}
+  \end{multicols}
+}
+
+\begin{document}
+  \thispagestyle{fancy}
+  \begin{center}
+    \Huge\textsc{Team Reference \\ Universidad Central de las Villas : KFP}
+  \end{center}
+  
+  \begin{center}
+    \textbf{Miembros del Equipo:} Rafael Fernández Morera, Ruddy Guerrero Alvarez\\
+  \end{center}  
+
+  \begin{multicols}{2}
+    \tableofcontents
+  \end{multicols}
+
+  
+  
+  \enlargethispage*{\baselineskip}
+  \pagebreak
+
+  \section{Estructura de Datos}
+  	
+    \includecpp {Arbol Binario Indexado}{./estructura-de-datos}{Arbol_Binario_Indexado.cpp}
+    \includecpp {Segment Tree}{./estructura-de-datos}{segment-tree.cpp}
+    \includecpp {Range Min-Max Quering}{./estructura-de-datos}{range-min-max-quering.cpp}
+    \includecpp {Lowest Comon Antecesor}{./estructura-de-datos}{lowest-comon-antecesor.cpp}
+    \includecpp {Heavy Ligth Descomposition+Segmente Tree+Lowest Common Antecesor}{./estructura-de-datos}{heavy-ligth-descomposition-segmente-tree-lowest-common-antecesor.cpp}
+    \includecpp {Centroid Descomposition+Lowest Common Antecesor}{./estructura-de-datos}{centroid-descomposition-lowest-common-antecesor.cpp}
+    \includecpp {Trie}{./estructura-de-datos}{Trie.cpp}
+
+  \section{Grafos \& Flow}
+  
+  \includecpp {Articulations Points}{./grafos-flow}{articulations-points.cpp}  
+  \includecpp {Brigdes}{./grafos-flow}{Brigdes.cpp}  
+  \includecpp {Strong Connect Component}{./grafos-flow}{strong-connect-component.cpp}  
+  \includecpp {Kruskal}{./grafos-flow}{Kruskal.cpp}  
+  \includecpp {Prim}{./grafos-flow}{Prim.cpp}  
+  \includecpp {K-th Camino Mínimo}{./grafos-flow}{k-th-camino-minimo.cpp} 
+  \includecpp {Floyd Warshall}{./grafos-flow}{floyd-warshall.cpp}
+  \includecpp {Camino Circuito Eureliano}{./grafos-flow}{camino-circuito-eureliano.cpp}
+  \includecpp {Ford Fulkerson}{./grafos-flow}{ford-fulkerson.cpp}
+  \includecpp {Flujo Máximo Costo-Costo Mínimo}{./grafos-flow}{flujo-maximo-costo-costo-minimo.cpp}
+  \includecpp {Hungarian Algorithm}{./grafos-flow}{hungarian-algorithm.cpp}
+  
+  \section{Geometry \& Math}
+  \includecpp {Estructuras Geometricas}{./geometry-math}{estructuras-geometricas.cpp}  
+  \includecpp {Convex Hull}{./geometry-math}{convex-hull.cpp}  
+  \includecpp {Closest Pair of Points}{./geometry-math}{closest-pair-of-points.cpp}  
+  \includecpp {GCD – LCM – Extended GCD}{./geometry-math}{gcd-lcm-extended-gcd.cpp} 
+  \includecpp {Area de Union+Multi Set}{./geometry-math}{area-de-union-multi-set.cpp}  
+  \includecpp {Area de Union+Segment Tree}{./geometry-math}{area-de-union-segment-tree.cpp} 
+  \includecpp {Factorizacion}{./geometry-math}{Factorizacion.cpp}  
+  \includecpp {Metodo de Gauss}{./geometry-math}{metodo-de-gauss.cpp} 
+  \includecpp {Fibonacci Logaritmico}{./geometry-math}{fibonacci-logaritmico.cpp}  
+  \includecpp {Binary Exponetation}{./geometry-math}{binary-exponetation.cpp} 
+  \includecpp {Factorial Compactado}{./geometry-math}{factorial-compactado.cpp}  
+  
+  \section{String Algorithms}  
+  \includecpp {Palindromes 1}{./string-algorithms}{palindromes-1.cpp} 
+  \includecpp {Knutt Morris Pratt (Prefix Function)}{./string-algorithms}{knutt-morris-pratt-prefix-function.cpp}  
+ % \includecpp {Z Function}{./string-algorithms}{z-function.cpp} 
+  \includecpp {Cyclic Shift}{./string-algorithms}{cyclic-shift.cpp} 
+  \includecpp {Hashing}{./string-algorithms}{Hashing.cpp}  
+
+  \section{Dinamic Programing}
+  \includecpp {Longest Common Subsequence}{./dinamic-programing}{longest-common-subsequence.cpp}  
+  \includecpp {Longest Increasing or Decreasing Secuence}{./dinamic-programing}{longest-increasing-or-decreasing-secuence.cpp}    
+  \includecpp {Counting Change}{./dinamic-programing}{counting-change.cpp}   
+  \includecpp {Edit Distance}{./dinamic-programing}{edit-distance.cpp}
+
+  \section{Especificaciones Lenguajes C++}
+  \includecpp {Sincronizar EntradaSalida iostream}{./especificaciones-lenguajes-c}{sincronizar-entradasalida-iostream.cpp}
+  
+ % \section{Dinamic Programing}
+ % \includecpp {}{./string-algorithms}{.cpp}
+
+  %~ \section{}
+  
+  
+  
+  %~ \enlargethispage*{\baselineskip}
+  %~ \pagebreak
+
+  
+
+\end{document}
