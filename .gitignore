@@ -1,0 +1,22 @@
+# Compiled binaries and objects
+*.exe
+*.o
+*.out
+a.out
+
+# Editor backups
+*.save
+*~
+*.swp
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# OS files
+.DS_Store
+Thumbs.db
