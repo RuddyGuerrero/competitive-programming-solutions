@@ -6,7 +6,7 @@ C++ solutions to 600+ competitive programming problems, plus the ICPC team noteb
 
 | Source | Folder | Solutions |
 |--------|--------|----------:|
-| [Codeforces](https://codeforces.com/) | [`competitions/codeforces`](competitions/codeforces) | 314 (102 contests) |
+| [Codeforces](https://codeforces.com/) | [`competitions/codeforces`](competitions/codeforces) | 318 (103 contests) |
 | [USACO](http://usaco.org/) | [`competitions/usaco`](competitions/usaco) | 200 |
 | [CSAcademy](https://csacademy.com/) | [`competitions/csacademy`](competitions/csacademy) | 47 (15 rounds) |
 | Cuban Informatics Olympiad | [`competitions/cuba-olympiad`](competitions/cuba-olympiad) | 33 |
