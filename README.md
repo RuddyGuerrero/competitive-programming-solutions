@@ -25,7 +25,7 @@ Algorithm references compiled for team contests. Each folder holds the LaTeX sou
 
 ```text
 competitions/
-├── codeforces/contest-<id>/<index>-<problem-name>.cpp
+├── codeforces/contest-<id>/<index>-<problem-name>.cpp   # id zero-padded to 4 digits
 ├── csacademy/round-<n>/
 ├── usaco/
 ├── cuba-olympiad/{psn,nacional,provincial,oci}/
@@ -40,7 +40,7 @@ team-references/
 Solutions are single-file C++ programs reading from standard input:
 
 ```bash
-g++ -std=c++17 -O2 -o solution "competitions/codeforces/contest-009/a-die-roll.cpp"
+g++ -std=c++17 -O2 -o solution "competitions/codeforces/contest-0009/a-die-roll.cpp"
 ./solution < input.txt
 ```
 
